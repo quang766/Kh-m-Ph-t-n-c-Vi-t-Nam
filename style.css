@@ -1,0 +1,152 @@
+/* ==========================
+   CÀI ĐẶT CHUNG
+========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Skip Link */
+.skip-link{
+    position:absolute;
+    left:-999px;
+    top:10px;
+    background:#000;
+    color:#fff;
+    padding:10px 15px;
+    text-decoration:none;
+    border-radius:5px;
+    z-index:1000;
+}
+
+.skip-link:focus{
+    left:20px;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+    background:#00695c;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* ==========================
+   MENU
+========================== */
+
+nav{
+    background:#004d40;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    gap:25px;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* ==========================
+   MAIN
+========================== */
+
+main{
+    width:90%;
+    margin:auto;
+    padding:20px;
+}
+
+h1,h2{
+    margin-bottom:15px;
+    text-align:center;
+}
+
+p{
+    margin-bottom:15px;
+}
+
+/* ==========================
+   ẢNH
+========================== */
+
+img{
+    width:100%;
+    border:4px solid #00695c;
+    padding:8px;
+    border-radius:15px;
+    transition:.4s;
+}
+
+img:hover{
+    transform:scale(1.08) rotate(2deg);
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+}
+
+/* ==========================
+   GALLERY GRID
+========================== */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.gallery img:nth-child(even){
+    border-radius:50%;
+}
+
+.gallery img:nth-child(odd){
+    border-radius:15px;
+}
+
+/* ==========================
+   FLEXBOX
+========================== */
+
+.flex{
+    display:flex;
+    gap:20px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.flex img{
+    width:400px;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    background:#004d40;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
